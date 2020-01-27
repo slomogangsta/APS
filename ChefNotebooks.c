@@ -11,7 +11,7 @@ int main(void)
     for(int i=0;i<T;i++)
     {   
         flag = 0; 
-        scanf("%d %d %d %d",&X,&Y,&K,&N);
+        //scanf("%d %d %d %d",&X,&Y,&K,&N);
         for(int j=0;j<N;j++)
         {   
             scanf("%d %d",&P,&C);

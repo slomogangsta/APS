@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue May 12 09:16:03 2020
+
+@author: slomogangsta
+"""
+
+def maxCount(a): 
+  
+    # Counting frequencies of elements 
+    freq = {} 
+    for i in range(n): 
+        if (a[i] in freq):  
+            freq[a[i]] += 1
+        else:  
+            freq[a[i]] = 1
+          
+    print(freq)  
+    # Finding max sum of adjacent indices     
+    ans = 0
+    for key, value in freq.items():  
+        if (key+1 in freq) :     
+            ans = max(ans, freq[key] + freq[key + 1])  
+      
+    return ans 
+      
+# Driver Code  
+n = 5
+arr = [2, 2, 3, 4, 5] 
+  
+print(maxCount(arr)) 
